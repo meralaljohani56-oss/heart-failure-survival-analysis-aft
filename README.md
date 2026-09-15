@@ -1,48 +1,23 @@
-# 🫀 Clinical Survival Analysis: Parametric Accelerated Failure Time (AFT) Modeling
+# 🫀 Heart Failure Survival Analysis: Parametric AFT Modeling
 
-A clinical biostatistical research study modeling survival times and risk factors for heart failure patients. This project evaluates parametric **Accelerated Failure Time (AFT)** models (Weibull, Log-Normal, and Log-Logistic) against semi-parametric alternatives to quantify how clinical covariates accelerate or decelerate patient survival time.
-
----
-
-## 📌 Project Deliverables
-* **Research Poster:** [View PDF](docs/research_poster.pdf)
-* **Presentation Deck:** [View Slides](docs/presentation_deck.pdf)
-* **Analysis Code:** [R Script](scripts/survival_analysis.R)
+A clinical biostatistical research study applying parametric **Accelerated Failure Time (AFT)** survival models (Weibull, Log-Normal, and Log-Logistic) in **R** to evaluate clinical predictors and time-to-event outcomes for heart failure patients.
 
 ---
 
-## 🔬 Methodology & Statistical Framework
-
-### 1. Exploratory Survival Analysis
-* **Non-Parametric Baseline:** Estimated baseline survival probabilities using **Kaplan-Meier (KM)** estimators.
-* **Hypothesis Testing:** Conducted **Log-Rank tests** across clinical categorical subgroups (e.g., ejection fraction tiers, serum creatinine levels, age brackets) to identify statistically significant divergence in survival distributions.
-
-### 2. Parametric AFT Modeling
-Unlike Cox Proportional Hazards models that assume proportional hazard ratios over time, AFT models assess the direct effect of covariates on survival time via an acceleration factor ($\gamma = \exp(\beta)$):
-$$\ln(T) = \mu + \mathbf{x}'\boldsymbol{\beta} + \sigma \epsilon$$
-
-* Evaluated distributions: **Weibull**, **Log-Normal**, and **Log-Logistic**.
-* **Model Selection:** Compared goodness-of-fit using Akaike Information Criterion (**AIC**), Bayesian Information Criterion (**BIC**), and residual diagnostics (Cox-Snell residuals).
+## 📄 Project Deliverables
+* 📑 **Full Graduation Project Report:** [Read Report PDF](graduation_project_report.pdf)
+* 🖼️ **Academic Research Poster:** [View Poster PDF](research_poster.pdf)
+* 💻 **R Analysis Code:** [View R Script](analysis.R)
 
 ---
 
-## 📊 Key Findings & Clinical Insights
-* **Significant Predictors:** Identified key clinical covariates—including low ejection fraction and elevated serum creatinine—as significant drivers that accelerate the time to an event.
-* **Parametric Fit:** Parametric AFT formulations provided robust baseline hazard estimation and intuitive time-ratio interpretations for clinical prognostic use.
+## 🔬 Methodology Summary
+* **Baseline Non-Parametric Analysis:** Kaplan-Meier (KM) survival curves and Log-Rank tests across key patient demographics and clinical biomarkers.
+* **Parametric AFT Modeling:** Evaluated Weibull, Log-Normal, and Log-Logistic distributions to assess acceleration factors ($\gamma = \exp(\beta)$) on patient survival time.
+* **Model Selection:** Compared performance metrics using Akaike Information Criterion (AIC), Bayesian Information Criterion (BIC), and diagnostic residual plots.
 
 ---
 
-## 🛠️ Tools & Libraries
-* **Language:** R
-* **Core Packages:** `survival`, `survminer`, `ggplot2`, `dplyr`, `flexsurv`
-* **Presentation & Typesetting:** LaTeX / Beamer & Overleaf
-
----
-
-## 📂 Repository Structure
-```text
-├── data/                  # Clinical dataset
-├── scripts/               # R modeling scripts and data cleaning
-├── docs/                  # Academic poster and slide deck PDFs
-├── figures/               # Generated KM curves and model diagnostic plots
-└── README.md
+## 🛠️ Tools & Stack
+* **Language & Modeling:** R (`survival`, `survminer`, `flexsurv`, `ggplot2`)
+* **Documentation & Academic Typesetting:** LaTeX / Overleaf
