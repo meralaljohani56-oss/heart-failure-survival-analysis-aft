@@ -5,7 +5,7 @@ A clinical biostatistical research study applying parametric **Accelerated Failu
 ---
 
 ## 📄 Project Deliverables
-* 📑 **Full Graduation Project Report:** [Read Report PDF](graduation_project_report.pdf)
+* 📑 **Full Graduation Project Report:** [Read Report PDF](Log-Location-Scale.pdf)
 * 🖼️ **Academic Research Poster:** [View Poster PDF](research_poster.pdf)
 * 💻 **R Analysis Code:** [View R Script](analysis.R)
 
