@@ -21,3 +21,13 @@ A clinical biostatistical research study applying parametric **Accelerated Failu
 ## 🛠️ Tools & Stack
 * **Language & Modeling:** R (`survival`, `survminer`, `flexsurv`, `ggplot2`)
 * **Documentation & Academic Typesetting:** LaTeX / Overleaf
+
+
+## 📂 Repository Structure
+```text
+├── data/                  # Clinical dataset
+├── scripts/               # R modeling scripts and data cleaning
+├── docs/                  # Academic poster and slide deck PDFs
+├── figures/               # Generated KM curves and model diagnostic plots
+└── README.md
+```
